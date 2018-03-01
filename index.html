@@ -23,9 +23,9 @@
         <div class="col-md-6">
             <div class="thumbnail">
               <img src="img/the-book-of-trees.jpg"> 
-              <p class="title"> </p>
+              <p>{{ product.name | uppercase }}</p>
               <p>{{ product.price | currency }}</p>
-              <p>{{ product.pubdate }}</p>
+              <p>{{ product.pubdate | date}}</p>
             </div>
           </div>
       </div>
